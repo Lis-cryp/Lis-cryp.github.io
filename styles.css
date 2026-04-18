@@ -375,8 +375,8 @@ body {
 }
 
 .avatar {
-  width: 92px;
-  height: 92px;
+  width: 96px;
+  height: 96px;
   margin: 0 auto 0.85rem;
   border-radius: 50%;
   border: 3px solid rgba(241, 196, 15, 0.55);
@@ -384,13 +384,16 @@ body {
     0 0 0 1px rgba(230, 126, 34, 0.35),
     0 10px 36px rgba(0, 0, 0, 0.45),
     0 0 32px rgba(230, 126, 34, 0.2);
-  background:
-    radial-gradient(circle at 32% 28%, rgba(255, 159, 67, 0.4), transparent 52%),
-    linear-gradient(155deg, var(--navy), var(--forest));
-  display: grid;
-  place-items: center;
-  font-size: 2.1rem;
-  line-height: 1;
+  background: var(--navy);
+  overflow: hidden;
+}
+
+.avatar__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 28%;
 }
 
 .profile__title {
@@ -476,11 +479,6 @@ body {
 
 .link:hover {
   transform: translateY(-3px);
-  border-color: var(--glass-border-hover);
-  background: var(--glass-bg-hover);
-  box-shadow:
-    var(--shadow-fire),
-    0 14px 36px rgba(0, 0, 0, 0.3);
 }
 
 .link:active {
@@ -490,6 +488,127 @@ body {
 .link:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 3px;
+}
+
+/* Окреме оформлення кнопок */
+.link--cash {
+  border-color: rgba(212, 175, 55, 0.55);
+  background:
+    linear-gradient(135deg, rgba(212, 175, 55, 0.14) 0%, rgba(26, 26, 46, 0.72) 55%, rgba(12, 14, 32, 0.75) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 220, 150, 0.12);
+}
+
+.link--cash .link__icon {
+  color: #e8c547;
+}
+
+.link--cash:hover {
+  border-color: rgba(241, 220, 120, 0.75);
+  background:
+    linear-gradient(135deg, rgba(212, 175, 55, 0.22) 0%, rgba(30, 32, 55, 0.82) 50%, rgba(14, 16, 36, 0.88) 100%);
+  box-shadow:
+    0 0 24px rgba(212, 175, 55, 0.22),
+    0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.link--cash:focus-visible {
+  outline-color: #e8c547;
+}
+
+.link--design {
+  border-color: rgba(139, 92, 246, 0.5);
+  background:
+    linear-gradient(145deg, rgba(56, 189, 248, 0.12) 0%, rgba(139, 92, 246, 0.1) 45%, rgba(12, 14, 32, 0.78) 100%);
+  box-shadow: inset 0 1px 0 rgba(167, 139, 250, 0.1);
+}
+
+.link--design .link__icon {
+  color: #7dd3fc;
+}
+
+.link--design:hover {
+  border-color: rgba(167, 139, 250, 0.7);
+  background:
+    linear-gradient(145deg, rgba(56, 189, 248, 0.2) 0%, rgba(139, 92, 246, 0.16) 40%, rgba(18, 20, 42, 0.88) 100%);
+  box-shadow:
+    0 0 28px rgba(139, 92, 246, 0.25),
+    0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.link--design:focus-visible {
+  outline-color: #a78bfa;
+}
+
+.link--motivation {
+  border-color: rgba(251, 113, 133, 0.5);
+  background:
+    linear-gradient(160deg, rgba(251, 146, 60, 0.12) 0%, rgba(244, 114, 182, 0.1) 50%, rgba(12, 14, 32, 0.78) 100%);
+  box-shadow: inset 0 1px 0 rgba(253, 186, 116, 0.12);
+}
+
+.link--motivation .link__icon {
+  color: #fb923c;
+}
+
+.link--motivation:hover {
+  border-color: rgba(253, 164, 175, 0.75);
+  background:
+    linear-gradient(160deg, rgba(251, 146, 60, 0.2) 0%, rgba(244, 114, 182, 0.16) 45%, rgba(18, 20, 42, 0.88) 100%);
+  box-shadow:
+    0 0 28px rgba(251, 113, 133, 0.22),
+    0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.link--motivation:focus-visible {
+  outline-color: #fb7185;
+}
+
+.link--play {
+  border-color: rgba(230, 126, 34, 0.6);
+  background:
+    linear-gradient(125deg, rgba(211, 84, 0, 0.18) 0%, rgba(230, 126, 34, 0.1) 40%, rgba(12, 14, 32, 0.78) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 159, 67, 0.15);
+}
+
+.link--play .link__icon {
+  color: #ff9f43;
+}
+
+.link--play:hover {
+  border-color: rgba(255, 159, 67, 0.85);
+  background:
+    linear-gradient(125deg, rgba(211, 84, 0, 0.26) 0%, rgba(230, 126, 34, 0.18) 35%, rgba(18, 20, 42, 0.88) 100%);
+  box-shadow:
+    0 0 32px rgba(230, 126, 34, 0.35),
+    0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.link--play:focus-visible {
+  outline-color: #ff9f43;
+}
+
+.link--help {
+  border-color: rgba(96, 165, 250, 0.5);
+  background:
+    linear-gradient(155deg, rgba(56, 189, 248, 0.08) 0%, rgba(129, 140, 248, 0.12) 50%, rgba(12, 14, 32, 0.78) 100%);
+  box-shadow: inset 0 1px 0 rgba(147, 197, 253, 0.12);
+}
+
+.link--help .link__icon {
+  color: #93c5fd;
+}
+
+.link--help:hover {
+  border-color: rgba(147, 197, 253, 0.75);
+  background:
+    linear-gradient(155deg, rgba(56, 189, 248, 0.14) 0%, rgba(129, 140, 248, 0.18) 45%, rgba(18, 20, 42, 0.88) 100%);
+  box-shadow:
+    0 0 28px rgba(96, 165, 250, 0.22),
+    0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.link--help:focus-visible {
+  outline-color: #93c5fd;
 }
 
 .link__row {
@@ -552,11 +671,21 @@ body {
    Підвал
    -------------------------------------------------------------------------- */
 .site-footer {
-  margin-top: 0.25rem;
-  font-size: 0.72rem;
-  opacity: 0.5;
+  margin-top: 0.85rem;
   text-align: center;
-  letter-spacing: 0.04em;
+}
+
+.site-footer__quote {
+  margin: 0;
+  max-width: 28ch;
+  margin-inline: auto;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  color: rgba(253, 246, 233, 0.78);
+  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.45);
 }
 
 /* --------------------------------------------------------------------------
