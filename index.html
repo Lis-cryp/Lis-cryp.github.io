@@ -5,26 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta
     name="description"
-    content="Мрійник: канали про думки, мотивацію, приховану сторону, ігровий бот та підтримку."
+    content="Мрійник: Telegram-канали про гроші, дизайн і мотивацію, ігровий бот та анонімна підтримка."
   />
-  <meta name="theme-color" content="#14182c" />
-  <title>Мрійник | Офіційні посилання</title>
+  <meta name="theme-color" content="#1a1a2e" />
+  <title>Мрійник — посилання</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="bg-scene" aria-hidden="true">
     <div class="bg-photo"></div>
     <div class="bg-vignette"></div>
+    <div class="bg-night-cycle"></div>
+    <div class="smoke">
+      <span class="smoke__wisp smoke__wisp--1"></span>
+      <span class="smoke__wisp smoke__wisp--2"></span>
+      <span class="smoke__wisp smoke__wisp--3"></span>
+      <span class="smoke__wisp smoke__wisp--4"></span>
+      <span class="smoke__wisp smoke__wisp--5"></span>
+    </div>
   </div>
-
   <div class="shell">
-    <main class="layout">
-      <section class="panel profile">
+    <main class="card">
+      <header class="profile">
         <div class="avatar">
-          <img class="avatar__img" src="1.png" alt="Мрійник" width="104" height="104" />
+          <img class="avatar__img" src="1.png" alt="Мрійник" width="96" height="96" />
         </div>
         <h1 class="profile__title">Мрійник</h1>
         <ul class="profile__list">
@@ -34,94 +44,216 @@
           <li>Підтримка, яка допомагає людям.</li>
           <li>Велика команда й затишний теплий проєкт.</li>
         </ul>
+      </header>
+
+      <ul class="links" aria-label="Канали та боти в Telegram">
+        <li>
+          <a
+            class="link link--design"
+            href="https://t.me/Mechtatel_dumki"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link__row">
+              <svg class="link__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.78 18.65l.28-4.23 7.68-6.92c.33-.3-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.29-.89-.86.08-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.43l-2.72 12.81c-.19.91-.74 1.13-1.5.71L9.78 18.65z"
+                />
+              </svg>
+              <div class="link__text">
+                <span class="link__title">Думки мрійника</span>
+                <span class="link__desc">Дизайн, бот і контент — реальний шлях без води й показухи.</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="link link--cash"
+            href="https://t.me/vissionary_cash"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link__row">
+              <svg class="link__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.78 18.65l.28-4.23 7.68-6.92c.33-.3-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.29-.89-.86.08-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.43l-2.72 12.81c-.19.91-.74 1.13-1.5.71L9.78 18.65z"
+                />
+              </svg>
+              <div class="link__text">
+                <span class="link__title">Прихована сторона</span>
+                <span class="link__desc">Крипта, трафік, системи. Тільки суть — без зайвого шуму.</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="link link--motivation"
+            href="https://t.me/Mechtatel_Motivation"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link__row">
+              <svg class="link__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.78 18.65l.28-4.23 7.68-6.92c.33-.3-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.29-.89-.86.08-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.43l-2.72 12.81c-.19.91-.74 1.13-1.5.71L9.78 18.65z"
+                />
+              </svg>
+              <div class="link__text">
+                <span class="link__title">Мотивація</span>
+                <span class="link__desc">Хроніки Мрійника: щодня нова ціль — енергія рухатися вперед.</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="link link--play"
+            href="https://t.me/vissionary_bot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link__row">
+              <svg class="link__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.78 18.65l.28-4.23 7.68-6.92c.33-.3-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.29-.89-.86.08-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.43l-2.72 12.81c-.19.91-.74 1.13-1.5.71L9.78 18.65z"
+                />
+              </svg>
+              <div class="link__text">
+                <span class="link__title">Ігровий бот @vissionary_bot</span>
+                <span class="link__desc">Додавай у чат і грай у те, що зайде.</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="link link--help"
+            href="https://t.me/vissionaryhelp_bot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="link__row">
+              <svg class="link__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.78 18.65l.28-4.23 7.68-6.92c.33-.3-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.29-.89-.86.08-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.43l-2.72 12.81c-.19.91-.74 1.13-1.5.71L9.78 18.65z"
+                />
+              </svg>
+              <div class="link__text">
+                <span class="link__title">Підтримка @vissionaryhelp_bot</span>
+                <span class="link__desc">Особиста допомога та підтримка — можна анонімно.</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <section class="policy" aria-label="Політика Pinterest">
+        <details class="policy__accordion">
+          <summary class="policy__summary">
+            <span class="policy__summary-title">Політика</span>
+            <span class="policy__summary-hint">натисни, щоб розгорнути</span>
+          </summary>
+          <div class="policy__content">
+            <p class="policy__intro">
+              Ключові пункти з Pinterest Developer Guidelines і Connect app — коротко, щоб одразу розуміти вимоги.
+            </p>
+            <div class="policy__table-wrap">
+              <table class="policy__table">
+                <thead>
+                  <tr>
+                    <th>Розділ</th>
+                    <th>Що потрібно</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1. Базові принципи</td>
+                    <td>
+                      Бути прозорими для користувача, працювати лише з авторизацією, не збирати логіни/паролі, не
+                      продавати дані, мати власну privacy policy.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2. Дозволено робити</td>
+                    <td>
+                      Інтеграції для реклами, контенту, креативу, e-commerce, вимірювання ефективності та робочих
+                      інструментів для брендів/креаторів.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3. Заборонено</td>
+                    <td>
+                      Автодії без згоди користувача, скрейпінг, обхід обмежень, фейкові інсайти, спам-інструменти,
+                      стимулювання неорганічної активності.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4. Публікація контенту</td>
+                    <td>
+                      Якщо показуємо контент Pinterest — має бути видиме посилання назад на Pinterest, без перекриття та
+                      без викривлення оригіналу.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5. Ads / аудиторії</td>
+                    <td>
+                      Потрібні чіткі повідомлення про використання даних, згода/opt-out, заборона використовувати дані
+                      Pinterest для таргету поза Pinterest.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6. Anti-abuse</td>
+                    <td>
+                      Продукт не має допомагати зловживанням. Pinterest може обмежити або вимкнути застосунок за
+                      порушення.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7. Connect app: старт</td>
+                    <td>
+                      Потрібен бізнес-акаунт, підтверджений email, прийняті Developer Terms, потім заявка на trial
+                      access у My apps.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8. Redirect URI</td>
+                    <td>
+                      Redirect URI має точно збігатися з URI в налаштуваннях застосунку. Без додаткових редіректів на
+                      третій URL.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9. OAuth 2.0 flow</td>
+                    <td>
+                      Authorization request → redirect handling → обмін code на access token → безпечне зберігання і
+                      оновлення токена.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="policy__source">
+              Джерела:
+              <a href="https://policy.pinterest.com/en-gb/developer-guidelines?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Developer Guidelines</a>
+              ·
+              <a href="https://developers.pinterest.com/docs/getting-started/connect-app/" target="_blank" rel="noopener noreferrer">Connect app</a>
+            </p>
+          </div>
+        </details>
       </section>
 
-      <section class="panel">
-        <ul class="links" aria-label="Канали та боти в Telegram">
-          <li>
-            <a class="link link--design" href="https://t.me/Mechtatel_dumki" target="_blank" rel="noopener noreferrer">
-              <div class="link__row">
-                <svg class="link__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M9.78 18.65l.28-4.23 7.68-6.92c.33-.3-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.29-.89-.86.08-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.43l-2.72 12.81c-.19.91-.74 1.13-1.5.71L9.78 18.65z" />
-                </svg>
-                <div class="link__text">
-                  <span class="link__title">Думки мрійника</span>
-                  <span class="link__desc">Дизайн, бот і контент — реальний шлях без води й показухи.</span>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="link link--cash" href="https://t.me/vissionary_cash" target="_blank" rel="noopener noreferrer">
-              <div class="link__row">
-                <svg class="link__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M9.78 18.65l.28-4.23 7.68-6.92c.33-.3-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.29-.89-.86.08-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.43l-2.72 12.81c-.19.91-.74 1.13-1.5.71L9.78 18.65z" />
-                </svg>
-                <div class="link__text">
-                  <span class="link__title">Прихована сторона</span>
-                  <span class="link__desc">Крипта, трафік, системи. Тільки суть — без зайвого шуму.</span>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="link link--motivation" href="https://t.me/Mechtatel_Motivation" target="_blank" rel="noopener noreferrer">
-              <div class="link__row">
-                <svg class="link__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M9.78 18.65l.28-4.23 7.68-6.92c.33-.3-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.29-.89-.86.08-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.43l-2.72 12.81c-.19.91-.74 1.13-1.5.71L9.78 18.65z" />
-                </svg>
-                <div class="link__text">
-                  <span class="link__title">Мотивація</span>
-                  <span class="link__desc">Хроніки Мрійника: щодня нова ціль — енергія рухатися вперед.</span>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="link link--play" href="https://t.me/vissionary_bot" target="_blank" rel="noopener noreferrer">
-              <div class="link__row">
-                <svg class="link__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M9.78 18.65l.28-4.23 7.68-6.92c.33-.3-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.29-.89-.86.08-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.43l-2.72 12.81c-.19.91-.74 1.13-1.5.71L9.78 18.65z" />
-                </svg>
-                <div class="link__text">
-                  <span class="link__title">Ігровий бот @vissionary_bot</span>
-                  <span class="link__desc">Додавай у чат і грай у те, що зайде.</span>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="link link--help" href="https://t.me/vissionaryhelp_bot" target="_blank" rel="noopener noreferrer">
-              <div class="link__row">
-                <svg class="link__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M9.78 18.65l.28-4.23 7.68-6.92c.33-.3-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.29-.89-.86.08-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.43l-2.72 12.81c-.19.91-.74 1.13-1.5.71L9.78 18.65z" />
-                </svg>
-                <div class="link__text">
-                  <span class="link__title">Підтримка @vissionaryhelp_bot</span>
-                  <span class="link__desc">Особиста допомога та підтримка — можна анонімно.</span>
-                </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <footer class="site-footer">
+        <p class="site-footer__quote">
+          Навіть у найгустішій темряві завжди залишається ще одна зірка.
+        </p>
+      </footer>
     </main>
-
-    <footer class="site-footer site-footer--nav">
-      <p class="site-footer__quote">Навіть у найгустішій темряві завжди залишається ще одна зірка.</p>
-      <details class="hidden-links">
-        <summary>service</summary>
-        <nav class="footer-nav" aria-label="Service links">
-          <a href="pinterest.html">Pinterest review page</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
-          <a href="contact.html">Contact</a>
-          <a href="login.html">Connect Pinterest</a>
-          <a href="dashboard.html">Dashboard</a>
-          <a href="auth/pinterest/callback/index.html">OAuth callback</a>
-        </nav>
-      </details>
-    </footer>
   </div>
 </body>
 </html>
