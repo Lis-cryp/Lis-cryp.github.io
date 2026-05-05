@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta
+    name="description"
+    content="Dreamer Studio is a creator tools and content publishing platform with secure Pinterest OAuth integration, user-approved publishing workflows, and support resources."
+  />
+  <meta name="theme-color" content="#14182c" />
+  <title>Dreamer Studio | Creator Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-scene" aria-hidden="true">
+    <div class="bg-photo"></div>
+    <div class="bg-vignette"></div>
+  </div>
+
+  <div class="shell shell--wide">
+    <header class="site-header">
+      <a class="brand" href="pinterest.html">
+        <span class="avatar avatar--sm">
+          <img class="avatar__img" src="1.png" alt="Dreamer Studio" width="44" height="44" />
+        </span>
+        <span>
+          <strong>Dreamer Studio</strong>
+          <small>creator tools platform</small>
+        </span>
+      </a>
+      <nav class="top-nav"><a href="index.html">Main site</a></nav>
+    </header>
+
+    <main class="layout">
+      <section class="hero panel">
+        <div class="hero__copy">
+          <p class="eyebrow">Pinterest-ready service</p>
+          <h1>Creator tools with secure Pinterest OAuth integration</h1>
+          <p class="hero__lead">
+            Dreamer Studio helps creators organize content ideas, connect Pinterest accounts, and publish user-approved
+            content through a transparent workflow. No hidden actions, no credential collection, and clear control over
+            connected accounts.
+          </p>
+
+          <ul class="feature-list">
+            <li>User-approved publishing workflow</li>
+            <li>Secure OAuth account connection</li>
+            <li>Creator workspace and content queue</li>
+            <li>Account disconnect and data deletion request flow</li>
+          </ul>
+        </div>
+
+        <aside class="hero__card panel panel--soft">
+          <h2>Service snapshot</h2>
+          <ul class="check-list">
+            <li>Creator workspace for planned publishing</li>
+            <li>Secure OAuth-based account connection</li>
+            <li>Support and legal documentation available</li>
+            <li>User-controlled publishing actions</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="grid-2">
+        <article class="panel">
+          <h2>How the service works</h2>
+          <ol class="steps">
+            <li>Create an account and sign in to the creator workspace.</li>
+            <li>Click <strong>Connect Pinterest</strong> and approve requested access.</li>
+            <li>Return to the secure callback URL to finish the connection.</li>
+            <li>Manage drafts and publish content only after explicit user action.</li>
+          </ol>
+        </article>
+
+        <article class="panel">
+          <h2>Business presentation</h2>
+          <p>
+            Dreamer Studio is presented as a real creator service, not a single-link landing page. The product includes
+            a homepage, support information, account area, legal pages, and a documented Pinterest connection flow for
+            review purposes.
+          </p>
+        </article>
+      </section>
+
+      <section class="grid-2">
+        <article class="panel">
+          <h2>Pinterest connection flow</h2>
+          <p>
+            The service uses a secure OAuth integration. Users start from the login page, review the Pinterest connect
+            button, are redirected to Pinterest authorization, and then return to a dedicated callback URL.
+          </p>
+          <div class="code-box">
+            Redirect URI example:<br />
+            <code>https://your-domain.com/auth/pinterest/callback</code>
+          </div>
+          <p class="muted">
+            For local review this project also includes a static callback page at
+            <code>/auth/pinterest/callback/</code>.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h2>Documentation and compliance</h2>
+          <ul class="check-list">
+            <li>Transparent service description</li>
+            <li>No risky wording about abusive behavior</li>
+            <li>Policy summary based on Pinterest guidelines</li>
+            <li>Legal pages describing data handling and deletion requests</li>
+          </ul>
+          <p class="muted">
+            Pinterest references:
+            <a href="https://policy.pinterest.com/en-gb/developer-guidelines?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Developer Guidelines</a>
+            and
+            <a href="https://developers.pinterest.com/docs/getting-started/connect-app/" target="_blank" rel="noopener noreferrer">Connect app</a>.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--nav">
+      <p class="site-footer__quote">Even in the deepest night, there is always one more star.</p>
+      <details class="hidden-links">
+        <summary>Service links</summary>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">Connect Pinterest</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="auth/pinterest/callback/index.html">OAuth callback</a>
+        </nav>
+      </details>
+    </footer>
+  </div>
+</body>
+</html>

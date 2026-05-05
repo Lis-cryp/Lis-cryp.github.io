@@ -119,13 +119,10 @@ img {
   opacity: 0.86;
 }
 
-.footer-nav--subtle a {
-  font-size: 0.76rem;
-  opacity: 0.5;
-}
-
-.footer-nav--subtle a:hover {
-  opacity: 0.85;
+.top-nav--muted {
+  opacity: 0.42;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
 }
 
 .layout,
@@ -400,6 +397,31 @@ code {
 .site-footer__quote {
   margin: 0;
   color: var(--muted);
+}
+
+.hidden-links {
+  margin-left: auto;
+  font-size: 0.78rem;
+  opacity: 0.42;
+}
+
+.hidden-links[open] {
+  opacity: 0.92;
+}
+
+.hidden-links > summary {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.hidden-links > summary::-webkit-details-marker {
+  display: none;
+}
+
+.hidden-links .footer-nav {
+  margin-top: 8px;
+  justify-content: flex-end;
 }
 
 .table-wrap {
