@@ -153,27 +153,119 @@
         </li>
       </ul>
 
-      <section class="pinterest" aria-label="Документи Pinterest">
-        <h2 class="pinterest__title">Pinterest</h2>
-        <p class="pinterest__desc">Політика та офіційний старт підключення застосунку.</p>
-        <div class="pinterest__links">
-          <a
-            class="pinterest__link"
-            href="https://policy.pinterest.com/en-gb/developer-guidelines?utm_source=chatgpt.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Developer Guidelines
-          </a>
-          <a
-            class="pinterest__link"
-            href="https://developers.pinterest.com/docs/getting-started/connect-app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Connect app
-          </a>
-        </div>
+      <section class="policy" aria-label="Політика Pinterest">
+        <details class="policy__accordion">
+          <summary class="policy__summary">
+            <span class="policy__summary-title">Політика</span>
+            <span class="policy__summary-hint">натисни, щоб розгорнути</span>
+          </summary>
+          <div class="policy__content">
+            <p class="policy__intro">
+              Ключові пункти з Pinterest Developer Guidelines і Connect app — коротко, щоб одразу розуміти вимоги.
+            </p>
+            <div class="policy__table-wrap">
+              <table class="policy__table">
+                <thead>
+                  <tr>
+                    <th>Розділ</th>
+                    <th>Що потрібно</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1. Базові принципи</td>
+                    <td>
+                      Бути прозорими для користувача, працювати лише з авторизацією, не збирати логіни/паролі, не
+                      продавати дані, мати власну privacy policy.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2. Дозволено робити</td>
+                    <td>
+                      Інтеграції для реклами, контенту, креативу, e-commerce, вимірювання ефективності та робочих
+                      інструментів для брендів/креаторів.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3. Заборонено</td>
+                    <td>
+                      Автодії без згоди користувача, скрейпінг, обхід обмежень, фейкові інсайти, спам-інструменти,
+                      стимулювання неорганічної активності.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4. Публікація контенту</td>
+                    <td>
+                      Якщо показуємо контент Pinterest — має бути видиме посилання назад на Pinterest, без перекриття та
+                      без викривлення оригіналу.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5. Ads / аудиторії</td>
+                    <td>
+                      Потрібні чіткі повідомлення про використання даних, згода/opt-out, заборона використовувати дані
+                      Pinterest для таргету поза Pinterest.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6. Anti-abuse</td>
+                    <td>
+                      Продукт не має допомагати зловживанням. Pinterest може обмежити або вимкнути застосунок за
+                      порушення.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7. Connect app: старт</td>
+                    <td>
+                      Потрібен бізнес-акаунт, підтверджений email, прийняті Developer Terms, потім заявка на trial
+                      access у My apps.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8. Redirect URI</td>
+                    <td>
+                      Redirect URI має точно збігатися з URI в налаштуваннях застосунку. Без додаткових редіректів на
+                      третій URL.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9. OAuth 2.0 flow</td>
+                    <td>
+                      Authorization request → redirect handling → обмін code на access token → безпечне зберігання і
+                      оновлення токена.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10. Вибір scopes (Choose scopes)</td>
+                    <td>
+                      Застосунок має просити мінімально потрібні права: стартуй із базових scopes, а додаткові — тільки коли
+                      реально знадобляться. Під час запиту розрізняй read і write права (write зазвичай вимагає відповідного
+                      read, якщо потрібно отримувати ID/дані для дії). У token запитах scopes задаються як
+                      <span style="white-space: nowrap;">{entity}:read / {entity}:write</span>, розділяючи між собою комами або пробілами.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11. Безпека токенів (Github secret scanner)</td>
+                    <td>
+                      Не зберігати й не публікувати access/refresh токени в коді чи репозиторії. Pinterest має GitHub
+                      secret scanning: якщо токен витече, його доступ відкликають, а тобі потрібно заново підʼєднати акаунт.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="policy__source">
+              Джерела:
+              <a href="https://policy.pinterest.com/en-gb/developer-guidelines?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">Developer Guidelines</a>
+              ·
+              <a href="https://developers.pinterest.com/docs/getting-started/connect-app/" target="_blank" rel="noopener noreferrer">Connect app</a>
+              ·
+              <a href="https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/#choose-scopes" target="_blank" rel="noopener noreferrer">Choose scopes</a>
+              ·
+              <a href="https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/#github-secret-scanner-program" target="_blank" rel="noopener noreferrer">GitHub secret scanner</a>
+            </p>
+          </div>
+        </details>
       </section>
 
       <footer class="site-footer">
